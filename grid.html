@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        .container {
+            background: pink;
+            border: 5px solid violet;
+            display: grid;
+            /* grid-template-columns: 100px  200px 100px;
+            grid-template-rows: 150px 100px; */
+            grid-template-rows: 100px  200px;
+            grid-auto-columns: 150px;
+            grid-auto-flow: column;
+            row-gap: 15px;
+            column-gap: 10px;
+            height: 100vh;
+            place-content: center;
+        }
+
+        .item {
+            border: 5px solid rgb(103, 103, 233);
+            font-size: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+</body>
+</html>

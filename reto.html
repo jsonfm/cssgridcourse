@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto</title>
+    <style>
+        body {
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .container {
+            background: white;
+            margin: 0 auto;
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-rows: 120px 120px 120px;
+            gap: 20px;
+        }
+
+        .item {
+            padding: 1rem;
+            position: relative;
+            width: 90px;
+        }
+
+        .item:nth-child(1), .item:nth-child(4) {
+            background: #B8DD00;
+        }
+
+        .item:nth-child(2), .item:nth-child(5) {
+            background: #7CC302;
+        }
+
+
+        .item:nth-child(3), .item:nth-child(6) {
+            background: #2B8E01;
+        }
+
+        .item:nth-child(3) span {
+            background: #123a00;
+        }
+
+
+        .item:nth-child(6) span {
+            background: #123a00;
+        }
+
+        .item span {
+            background: #2B8E01;
+            padding: .25rem;
+            font-size: 2.5rem;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="item"><span>1</span></div>
+        <div class="item"><span>2</span></div>
+        <div class="item"><span>3</span></div>
+        <div class="item"><span>4</span></div>
+        <div class="item"><span>5</span></div>
+        <div class="item"><span>6</span></div>
+    </div>
+</body>
+</html>
